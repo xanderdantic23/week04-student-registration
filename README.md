@@ -115,15 +115,15 @@ Server-side validation guarantees that only reliable, sanitized, and properly fo
 
 | Screenshot Asset | Visual Preview |
 | :--- | :---: |
-| **Registration Form** | ![Home Page](screenshots/01_registration_form.png) |
-| **Validation Errors** | ![About Page](screenshots/02_validation_errors.png) |
-| **Successful Registration** | ![Services Page](screenshots/03_successful_registration.png) |
-| **Flash Message** | ![Contact Page](screenshots/04_flash_message.png) |
-| **Uploaded Profile Picture** | ![Navigation Bar](screenshots/05_uploaded_image.png) |
-| **Database Table** | ![Footer](screenshots/06_database_table.png) |
-| **Student Profile Page** | ![Route Definitions](screenshots/07_student_profile.png) |
-| **VS Code Project Structure** | ![Controller](screenshots/08_project_structure.png) |
-| **GitHub Repository** | ![Blade Layout](screenshots/09_github_repository.png) |
+| **Registration Form** | ![Registration Form](screenshots/01_registration_form.png) |
+| **Validation Errors** | ![Validation Errors](screenshots/02_validation_errors.png) |
+| **Successful Registration** | ![Successful Registration](screenshots/03_successful_registration.png) |
+| **Flash Message** | ![Flash Message](screenshots/04_flash_message.png) |
+| **Uploaded Profile Picture** | ![Uploaded Profile Picture](screenshots/05_uploaded_image.png) |
+| **Database Table** | ![Database Table](screenshots/06_database_table.png) |
+| **Student Profile Page** | ![Student Profile Page](screenshots/07_profile.png) |
+| **VS Code Project Structure** | ![VS Code](screenshots/08_project_structure.png) |
+| **GitHub Repository** | ![Repository](screenshots/09_github_repository.png) |
 
 ---
 
