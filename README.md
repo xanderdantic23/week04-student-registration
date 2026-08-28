@@ -117,10 +117,10 @@ Server-side validation guarantees that only reliable, sanitized, and properly fo
 | :--- | :---: |
 | **Registration Form** | ![Registration Form](screenshots/01_registration_form.png) |
 | **Validation Errors** | ![Validation Errors](screenshots/02_validation_errors.png) |
-| **Successful Registration** | ![Successful Registration](screenshots/03_successful_registration.png) |
+| **Successful Registration** | ![Successful Registration](screenshots/03_successful.png) |
 | **Flash Message** | ![Flash Message](screenshots/04_flash_message.png) |
-| **Uploaded Profile Picture** | ![Uploaded Profile Picture](screenshots/05_uploaded_image.png) |
-| **Database Table** | ![Database Table](screenshots/06_database_table.png) |
+| **Uploaded Profile Picture** | ![Uploaded Profile Picture](screenshots/05_uploaded.png) |
+| **Database Table** | ![Database Table](screenshots/06_database.png) |
 | **Student Profile Page** | ![Student Profile Page](screenshots/07_profile.png) |
 | **VS Code Project Structure** | ![VS Code](screenshots/08_project_structure.png) |
 | **GitHub Repository** | ![Repository](screenshots/09_github_repository.png) |
