@@ -115,12 +115,57 @@ Server-side validation guarantees that only reliable, sanitized, and properly fo
 
 | Screenshot Asset | Visual Preview |
 | :--- | :---: |
-| **Registration Form** | ![Home Page](screenshots/Home.png) |
-| **Validation Errors** | ![About Page](screenshots/About.png) |
-| **Successful Registration** | ![Services Page](screenshots/Services.png) |
-| **Flash Message** | ![Contact Page](screenshots/Contact.png) |
-| **Uploaded Profile Picture** | ![Navigation Bar](screenshots/NavBar.png) |
-| **Database Table** | ![Footer](screenshots/Footer.png) |
-| **Student Profile Page** | ![Route Definitions](screenshots/Routes.png) |
-| **VS Code Project Structure** | ![Controller](screenshots/Controller.png) |
-| **GitHub Repository** | ![Blade Layout](screenshots/Layout.png) |
+| **Registration Form** | ![Home Page](screenshots/01_registration_form.png) |
+| **Validation Errors** | ![About Page](screenshots/02_validation_errors.png) |
+| **Successful Registration** | ![Services Page](screenshots/03_successful_registration.png) |
+| **Flash Message** | ![Contact Page](screenshots/04_flash_message.png) |
+| **Uploaded Profile Picture** | ![Navigation Bar](screenshots/05_uploaded_image.png) |
+| **Database Table** | ![Footer](screenshots/06_database_table.png) |
+| **Student Profile Page** | ![Route Definitions](screenshots/07_student_profile.png) |
+| **VS Code Project Structure** | ![Controller](screenshots/08_project_structure.png) |
+| **GitHub Repository** | ![Blade Layout](screenshots/09_github_repository.png) |
+
+---
+
+## 9. Problems Encountered
+
+1. **`ViteManifestNotFoundException` Asset Error:**  
+   Occurred upon initial route access because compiled assets were missing.
+
+2. **MySQL Database Connection & Setup Failures:**  
+   First-time configuration errors connecting Laravel to MySQL without XAMPP, leading to `SQLSTATE[HY000] [2002] Connection refused` (stopped MySQL service) and `SQLSTATE[42S02] Table 'sessions' doesn't exist` (missing database/session migrations).
+
+3. **Broken Profile Image Display:**  
+   Uploaded student images returned broken image placeholders on the profile preview view.
+
+---
+
+## 10. Solutions
+
+1. Executed `npm install` to install Node dependencies followed by `npm run dev` to run the active Vite asset bundling server.
+
+2. Started the standalone MySQL service via Windows Services (`services.msc`), manually created the `week04_student_registration` database in MySQL Workbench, updated `.env` 
+   credentials (`DB_CONNECTION=mysql`, `DB_HOST=127.0.0.1`), and ran `php artisan migrate` to build the required schema tables.
+
+3. Created a public symbolic storage link by running `php artisan storage:link` in terminal, connecting `storage/app/public` to `public/storage`.
+
+---
+
+## 11. Reflection
+
+Building this Student Registration System gave me a practical understanding of how web applications handle user data and database storage in real life. Working through the Laravel framework step-by-step made concepts like server-side validation, file security, and request routing much easier to grasp.
+
+One of the biggest lessons I learned from this project is the importance of validation. Without proper validation rules, users can submit empty inputs, wrong data formats, or duplicate records like repeating student IDs. Validation acts as a filter that guarantees only clean, complete, and accurate information reaches our database. Handling user input taught me that a system should never trust user data automatically. We must always check every single field on the server before saving it to prevent system errors or database corruption.
+
+I also learned why server-side validation is much better than client-side validation. Client-side checks (like using basic HTML tags or JavaScript in the browser) are great for giving quick feedback to the user, but they can easily be turned off or bypassed by anyone inspecting the browser page. Server-side validation, on the other hand, runs directly inside Laravel on the web server. Even if a user tries to bypass the browser form, the controller will block invalid requests and redirect them back safely.
+
+Handling profile picture uploads showed me why file security is critical in web applications. If a system lets users upload any file without checks, someone could upload malicious scripts or huge files that crash the server. Restricting uploads strictly to image types (`jpg`, `jpeg`, `png`) and limiting the file size to 2MB keeps the application safe. Storing the actual images inside Laravel's storage folder while saving only the relative file path string in MySQL is a clean and secure way to manage media assets.
+
+Finally, this project helped me see how registration modules work in enterprise software. Whether it is a university student portal, a municipal government service app, or an online banking system, secure user registration is always the first step. Learning how to collect, validate, and store records using Laravel, MySQL, and Git gives us the foundational skills needed to build real-world, enterprise-ready web applications.
+
+## 12. References
+
+* Laravel. (2026). Laravel documentation: Validation. https://laravel.com/docs/validation
+* Laravel. (2026). Laravel documentation: File storage. https://laravel.com/docs/structure
+* MySQL. (2026). MySQL 8.0 Reference Manual. https://dev.mysql.com/doc/refman/8.0/en/
+* Tailwind CSS. (2026). Tailwind CSS documentation. https://tailwindcss.com/docs
