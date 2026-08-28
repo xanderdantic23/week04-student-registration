@@ -115,7 +115,7 @@ Server-side validation guarantees that only reliable, sanitized, and properly fo
 
 | Screenshot Asset | Visual Preview |
 | :--- | :---: |
-| **Registration Form** | ![Registration Form](screenshots/01_registration_form.png) |
+| **Registration Form** | ![Registration For](screenshots/01_registration_form.png) |
 | **Validation Errors** | ![Validation Errors](screenshots/02_validation_errors.png) |
 | **Successful Registration** | ![Successful Registration](screenshots/03_successful_registration.png) |
 | **Flash Message** | ![Flash Message](screenshots/04_flash_message.png) |
