@@ -123,7 +123,7 @@ Server-side validation guarantees that only reliable, sanitized, and properly fo
 | **Database Table** | ![Database Table](screenshots/06_database_table.png) |
 | **Student Profile Page** | ![Student Profile Page](screenshots/07_profile.png) |
 | **VS Code Project Structure** | ![VS Code](screenshots/08_project_structure.png) |
-| **GitHub Repository** | ![Repository](screenshots/09_github_repository.png) |
+| **GitHub Repository** | ![Repositor](screenshots/09_github_repository.png) |
 
 ---
 
